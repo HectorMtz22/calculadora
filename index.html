@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta lang="es-ES">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos1.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Short+Stack" rel="stylesheet">
+	<title>Calculadora</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous">
+	  </script>
+	<script type="text/javascript" LANGUAGE="JavaScript1.1">
+		function derecha(e) {
+		if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)){
+		alert('Hola XD')
+		return false;
+		}
+
+		else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2)){
+		alert('Hola XD')
+		}
+		}
+		document.onmousedown=derecha
+	</script>
+	<SCRIPT language=JavaScript1.2>
+
+		function disableselect(e){
+		return false
+		}
+
+		function reEnable(){
+		return true
+		}
+
+		//if IE4+
+		document.onselectstart=new Function ("return false")
+
+		//if NS6
+		if (window.sidebar){
+		document.onmousedown=disableselect
+		document.onclick=reEnable
+		}
+	</SCRIPT>
+	<SCRIPT language=JavaScript>
+		statuss();
+		function statuss()
+		{
+		window.status = "... | w o l f s p i r i t | ...";
+		setTimeout("statuss()", 1);
+		}
+	</SCRIPT> 
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Calculadora v.1.1.2</h1>
+		</div>
+	</header>
+	<div class="container">
+		<form class="form" name="calculator">
+			<div class="form-group">
+				<input type="text" name="input" class="form-control text" placeholder="Calculadora">
+				<div class="form-group col-auto">
+					<input type="button" onclick="updatestring('+')" value="+" class="btn btncolor">
+					<input type="button" onclick="updatestring('-')" value="-" class="btn btncolor">
+					<input type="button" onclick="updatestring('*')" value="*" class="btn btncolor">
+					<input type="button" onclick="updatestring('/')" value="/" class="btn btncolor">
+				</div>
+				<div class="form-group col-auto">
+					<input type="button" onclick="updatestring('%')" value="%" class="btn btncolor">
+					<input type="button" onclick="updatestring('0')" value="0" class="btn btncolor">
+					<input type="button" onclick="updatestring('1')" value="1" class="btn btncolor">
+					<input type="button" onclick="updatestring('2')" value="2" class="btn btncolor">
+				</div>
+				<div class="form-group col-auto">
+					<input type="button" onclick="updatestring(3)" value="3" class="btn btncolor">
+					<input type="button" onclick="updatestring('4')" value="4" class="btn btncolor">
+					<input type="button" onclick="updatestring('5')" value="5" class="btn btncolor">
+					<input type="button" onclick="updatestring('6')" value="6" class="btn btncolor">
+				</div>
+				<div class="form-group col-auto">
+					<input type="button" onclick="updatestring('7')" value="7" class="btn btncolor">
+					<input type="button" onclick="updatestring('8')" value="8" class="btn btncolor">
+					<input type="button" onclick="updatestring('9')" value="9" class="btn btncolor">
+					<input type="button" onclick="resultado()" value="=" class="btn btncolor">
+				</div>
+				<div class="form-group col-auto">
+					<input type="button" onclick="borrar()" value="Clear" class="btn btncolor">
+				</div>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="js/js1.js"></script>
+	<footer class="">
+		<div class="container">
+			<h3>Hecho por Héctor Mtz (1897759)</h3>
+			<h5>Reservado por derechos de autor. Copyright &copy;.</h5>
+		</div>
+	</footer>
+</body>
+</html>

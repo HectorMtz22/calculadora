@@ -1,0 +1,83 @@
+body {
+	font-family: Roboto;
+}
+
+header {
+	padding-top: 5px;
+	border-bottom: 5px solid #f2f2f2;
+	font-family: "Poiret One";
+}
+
+form {
+	margin-top: 1%;
+	background: #fff;
+	color: #000;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 20px;
+	z-index: 1;
+	border: 1px solid #000;
+}
+
+.form {
+	animation-name: colorchange;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+.form-group {
+	display: block;
+}
+
+.btncolor {
+	animation-name: colorchanges, colorchangetext;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+.btn {
+	font-size: 20px;
+	width: 23%;
+	background-color: #000;
+	color: #fff;
+
+}
+
+.text {
+	border:1px solid #000;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+footer {
+	border-top: 5px solid #f2f2f2;
+	font-family: "Poiret One";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+@keyframes colorchange {
+	0% {background-color: #fff;}
+	50% {background-color: #000;}
+	100% {background-color: #fff;}
+}
+
+@keyframes colorchanges {
+	0% {background-color: #000;}
+	50% {background-color: #fff;}
+	100% {background-color: #000;}
+}
+
+@keyframes colorchangetext {
+	0% {color: #fff;}
+	50% {color: #000;}
+	100% {color: #fff;}
+}
+
+
+.nofooter {
+	display: none;
+}
